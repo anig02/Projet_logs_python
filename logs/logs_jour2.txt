@@ -1,0 +1,116 @@
+2026-10-14 07:34:10 | INFO | 192.168.0.14 | user03 | Connexion reussie | 443 | HTTPS
+2026-10-14 08:21:10 | INFO | 10.12.4.101 | user01 | Connexion reussie | 443 | HTTPS
+2026-10-14 08:29:10 | ERROR | 192.168.0.37 | user04 | Mot de passe incorrect | 443 | HTTPS
+2026-10-14 08:40:10 | ERROR | 192.168.0.14 | user01 | Mot de passe incorrect | 443 | HTTPS
+2026-10-14 09:38:10 | INFO | 84.203.17.92 | user02 | Connexion reussie | 443 | HTTPS
+2026-10-14 09:47:10 | CRITICAL | 151.6.240.33 | user04 | Serveur arrete | 80 | HTTP
+2026-10-14 10:19:10 | WARNING | 10.12.4.101 | user03 | Disque presque plein | 22 | SSH
+2026-10-14 10:24:10 | ERROR | 192.168.0.14 | user04 | Page introuvable | 22 | SSH
+2026-10-14 10:24:10 | ERROR |  | user04 | Page introuvable | 22 | SSH
+2026-10-14 10:55:10 | ERROR | 37.165.88.9 | user02 | Mot de passe incorrect | 22 | SSH
+2026-10-14 11:31:10 | CRITICAL | 84.203.17.92 | user01 | Acces refuse | 80 | HTTP
+2026-10-14 12:09:10 | INFO | 192.168.0.14 | user01 | Connexion reussie | 80 | HTTP
+2026-10-14 12:38:10 | WARNING | 84.203.17.92 | user04 | Disque presque plein | 22 | SSH
+2026-10-14 13:25:10 | WARNING | 91.68.112.250 | user01 | Disque presque plein | 443 | HTTPS
+
+2026-10-14 13:56:10 | CRITICAL | 10.12.4.101 | user04 | Serveur arrete | 443 | HTTPS
+2026-10-14 14:49:10 | CRITICAL | 192.168.0.14 | user04 | Serveur arrete | 22 | SSH
+2026-10-14 15:02:10 | INFO | 10.12.4.101 | user02 | Page consultee | 80 | HTTP
+2026-10-14 15:11:10 | INFO | 91.68.112.250 | user03 | Connexion reussie | 80 | HTTP
+2026-10-14 15:59:10 | ERROR | 37.165.88.9 | user01 | Page introuvable | 80 | HTTP
+2026-10-14 16:35:10 | CRITICAL | 37.165.88.9 | user03 | Acces refuse | 80 | HTTP
+2026-10-14 17:35:10 | CRITICAL | 84.203.17.92 | user04 | Serveur arrete | 80 | HTTP
+
+2026-10-14 17:59:10 | INFO | 91.68.112.250 | user04 | Page consultee | 80 | HTTP
+2026-10-14 18:26:10 | ERROR | 84.203.17.92 | user04 | Mot de passe incorrect | 22 | SSH
+2026-10-14 19:02:10 | ERROR | 192.168.0.37 | user01 | Page introuvable | 443 | HTTPS
+
+2026-10-14 19:03:10 | INFO | 37.165.88.9 | user02 | Page consultee | 80 | HTTP
+2026-10-14 19:03:11 | ERROR | 194.249.205.224 | user01 | Mot de passe incorrect | 22 | SSH
+2026-10-14 19:03:13 | ERROR | 194.249.205.224 | user01 | Mot de passe incorrect | 22 | SSH
+2026-10-14 19:03:14 | ERROR | 194.249.205.224 | user01 | Mot de passe incorrect | 22 | SSH
+2026-10-14 19:03:17 | ERROR | 194.249.205.224 | user01 | Mot de passe incorrect | 22 | SSH
+2026-10-14 19:03:20 | ERROR | 194.249.205.224 | user01 | Mot de passe incorrect | 22 | SSH
+2026-10-14 19:03:21 | ERROR | 194.249.205.224 | user01 | Mot de passe incorrect | 22 | SSH
+2026-10-14 19:45:21 | INFO | 84.203.17.92 | user01 | Connexion reussie | 22 | SSH
+2026-10-14 20:16:21 | WARNING | 84.203.17.92 | user04 | Reponse lente | 22 | SSH
+2026-10-14 20:50:21 | ERROR | 192.168.0.37 | user01 | Mot de passe incorrect | 80 | HTTP
+2026-10-14 21:44:21 | INFO | 192.168.0.14 | user04 | Connexion reussie | 22 | SSH
+2026-10-14 21:44:21 | INFO |  | user04 | Connexion reussie | 22 | SSH
+2026-10-14 21:50:21 | CRITICAL | 192.168.0.14 | user01 | Acces refuse | 80 | HTTP
+2026-10-14 21:59:21 | WARNING | 84.203.17.92 | user04 | Reponse lente | 80 | HTTP
+2026-10-14 22:33:21 | ERROR | 10.12.4.101 | user04 | Mot de passe incorrect | 22 | SSH
+2026-10-14 23:33:21 | WARNING | 151.6.240.33 | user04 | Disque presque plein | 80 | HTTP
+2026-10-14 23:47:21 | WARNING | 151.6.240.33 | user03 | Disque presque plein | 443 | HTTPS
+2026-10-15 00:16:21 | ERROR | 10.12.4.101 | user04 | Page introuvable | 80 | HTTP
+2026-10-15 00:21:21 | CRITICAL | 192.168.0.14 | user02 | Serveur arrete | 443 | HTTPS
+2026-10-15 00:59:21 | CRITICAL | 91.68.112.250 | user01 | Serveur arrete | 80 | HTTP
+2026-10-15 01:13:21 | WARNING | 10.12.4.101 | user04 | Disque presque plein | 443 | HTTPS
+2026-10-15 01:45:21 | INFO | 91.68.112.250 | user02 | Page consultee | 80 | HTTP
+2026-10-15 02:25:21 | WARNING | 192.168.0.37 | user02 | Disque presque plein | 443 | HTTPS
+2026-10-15 02:28:21 | WARNING | 91.68.112.250 | user03 | Disque presque plein | 22 | SSH
+2026-10-15 02:39:21 | CRITICAL | 151.6.240.33 | user04 | Acces refuse | 22 | SSH
+2026-10-15 03:04:21 | INFO | 151.6.240.33 | user03 | Connexion reussie | 443 | HTTPS
+2026-10-15 03:36:21 | CRITICAL | 151.6.240.33 | user03 | Acces refuse | 443 | HTTPS
+2026-10-15 04:17:21 | CRITICAL | 37.165.88.9 | user04 | Serveur arrete | 22 | SSH
+2026-10-15 04:39:21 | ERROR | 84.203.17.92 | user03 | Mot de passe incorrect | 80 | HTTP
+2026-10-15 05:36:21 | ERROR | 84.203.17.92 | user03 | Mot de passe incorrect | 80 | HTTP
+2026-10-15 05:45:21 | INFO | 192.168.0.37 | user04 | Connexion reussie | 443 | HTTPS
+2026-10-15 05:48:21 | WARNING | 192.168.0.37 | user02 | Reponse lente | 22 | SSH
+2026-10-15 06:22:21 | CRITICAL | 192.168.0.14 | user02 | Serveur arrete | 443 | HTTPS
+2026-10-15 06:22:21 | CRITICAL |  | user02 | Serveur arrete | 443 | HTTPS
+2026-10-15 06:36:21 | INFO | 192.168.0.14 | user03 | Page consultee | 22 | SSH
+2026-10-15 06:53:21 | CRITICAL | 91.68.112.250 | user02 | Acces refuse | 80 | HTTP
+2026-10-15 07:42:21 | ERROR | 192.168.0.37 | user03 | Page introuvable | 80 | HTTP
+2026-10-15 08:16:21 | CRITICAL | 10.12.4.101 | user01 | Acces refuse | 443 | HTTPS
+
+2026-10-15 08:44:21 | INFO | 151.6.240.33 | user04 | Page consultee | 22 | SSH
+2026-10-15 08:46:21 | INFO | 37.165.88.9 | user01 | Connexion reussie | 22 | SSH
+2026-10-15 09:11:21 | INFO | 84.203.17.92 | user01 | Page consultee | 443 | HTTPS
+2026-10-15 09:32:21 | ERROR | 91.68.112.250 | user02 | Mot de passe incorrect | 22 | SSH
+2026-10-15 10:05:21 | CRITICAL | 151.6.240.33 | user02 | Acces refuse | 443 | HTTPS
+2026-10-15 10:21:21 | ERROR | 10.12.4.101 | user04 | Page introuvable | 22 | SSH
+2026-10-15 11:15:21 | ERROR | 192.168.0.37 | user04 | Mot de passe incorrect | 80 | HTTP
+2026-10-15 11:34:21 | ERROR | 192.168.0.14 | user01 | Mot de passe incorrect | 22 | SSH
+2026-10-15 12:13:21 | WARNING | 192.168.0.37 | user02 | Reponse lente | 22 | SSH
+2026-10-15 12:40:21 | INFO | 151.6.240.33 | user03 | Page consultee | 22 | SSH
+2026-10-15 12:58:21 | ERROR | 37.165.88.9 | user04 | Page introuvable | 80 | HTTP
+2026-10-15 13:29:21 | CRITICAL | 151.6.240.33 | user03 | Serveur arrete | 443 | HTTPS
+2026-10-15 14:23:21 | INFO | 10.12.4.101 | user04 | Page consultee | 80 | HTTP
+2026-10-15 15:22:21 | ERROR | 84.203.17.92 | user04 | Page introuvable | 443 | HTTPS
+2026-10-15 15:23:21 | CRITICAL | 151.6.240.33 | user04 | Serveur arrete | 443 | HTTPS
+2026-10-15 15:59:21 | CRITICAL | 192.168.0.14 | user03 | Serveur arrete | 22 | SSH
+2026-10-15 16:10:21 | CRITICAL | 37.165.88.9 | user02 | Acces refuse | 443 | HTTPS
+2026-10-15 16:41:21 | ERROR | 192.168.0.37 | user02 | Page introuvable | 22 | SSH
+2026-10-15 17:10:21 | INFO | 91.68.112.250 | user02 | Connexion reussie | 22 | SSH
+2026-10-15 17:36:21 | WARNING | 151.6.240.33 | user04 | Disque presque plein | 443 | HTTPS
+2026-10-15 18:36:21 | ERROR | 192.168.0.37 | user02 | Page introuvable | 22 | SSH
+2026-10-15 19:16:21 | ERROR | 192.168.0.37 | user01 | Mot de passe incorrect | 22 | SSH
+2026-10-15 19:35:21 | ERROR | 84.203.17.92 | user01 | Mot de passe incorrect | 80 | HTTP
+2026-10-15 20:03:21 | ERROR | 10.12.4.101 | user02 | Mot de passe incorrect | 22 | SSH
+2026-10-15 20:44:21 | INFO | 10.12.4.101 | user03 | Page consultee | 22 | SSH
+2026-10-15 21:08:21 | ERROR | 37.165.88.9 | user03 | Mot de passe incorrect | 22 | SSH
+2026-10-15 21:09:21 | CRITICAL | 192.168.0.14 | user04 | Serveur arrete | 80 | HTTP
+
+2026-10-15 21:58:21 | WARNING | 84.203.17.92 | user01 | Reponse lente | 443 | HTTPS
+2026-10-15 22:03:21 | CRITICAL | 10.12.4.101 | user02 | Acces refuse | 80 | HTTP
+2026-10-15 22:20:21 | CRITICAL | 91.68.112.250 | user02 | Serveur arrete | 443 | HTTPS
+2026-10-15 22:47:21 | ERROR | 192.168.0.14 | user01 | Page introuvable | 443 | HTTPS
+2026-10-15 23:37:21 | WARNING | 84.203.17.92 | user03 | Disque presque plein | 443 | HTTPS
+2026-10-16 00:09:21 | ERROR | 84.203.17.92 | user02 | Mot de passe incorrect | 443 | HTTPS
+2026-10-16 00:31:21 | WARNING | 192.168.0.37 | user03 | Reponse lente | 22 | SSH
+
+2026-10-16 00:34:21 | WARNING | 84.203.17.92 | user04 | Disque presque plein | 22 | SSH
+2026-10-16 01:03:21 | ERROR | 192.168.0.14 | user04 | Mot de passe incorrect | 22 | SSH
+2026-10-16 01:20:21 | INFO | 10.12.4.101 | user01 | Connexion reussie | 22 | SSH
+2026-10-16 01:47:21 | CRITICAL | 192.168.0.37 | user02 | Serveur arrete | 443 | HTTPS
+2026-10-16 01:53:21 | INFO | 10.12.4.101 | user04 | Page consultee | 22 | SSH
+2026-10-16 02:20:21 | WARNING | 192.168.0.14 | user03 | Disque presque plein | 22 | SSH
+2026-10-16 02:27:21 | CRITICAL | 151.6.240.33 | user04 | Acces refuse | 80 | HTTP
+2026-10-16 02:49:21 | CRITICAL | 91.68.112.250 | user03 | Serveur arrete | 22 | SSH
+
+2026-10-16 03:17:21 | INFO | 91.68.112.250 | user02 | Page consultee | 80 | HTTP
+2026-10-16 03:59:21 | CRITICAL | 91.68.112.250 | user02 | Serveur arrete | 80 | HTTP
+2026-10-16 04:36:21 | WARNING | 151.6.240.33 | user02 | Disque presque plein | 22 | SSH
+2026-10-16 04:46:21 | ERROR | 192.168.0.14 | user03 | Mot de passe incorrect | 443 | HTTPS
+2026-10-16 05:10:21 | ERROR | 192.168.0.37 | user02 | Mot de passe incorrect | 443 | HTTPS
