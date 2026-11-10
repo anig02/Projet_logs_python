@@ -40,7 +40,7 @@ def creation_fichier(nom_fichier,date): #N nombre de fichier attendue
     with open(f'logs/{nom_fichier}.txt', 'w',encoding='utf-8') as fichier: #encoding= garantit que les accents (é, à, ç…) s’enregistrent et se relisent correctement sur n’importe quel ordinateur.
           
          
-         for i in range(100):
+         for i in range(1_000_000):
                 
                 n=rd.randint(1,60)
                 ecart= datetime.timedelta(seconds=n)
@@ -58,12 +58,18 @@ def creation_fichier(nom_fichier,date): #N nombre de fichier attendue
                      utilisateur = utilisateur.upper() 
 
                 ligne= f"{date} | {niveau} | {ip} | {utilisateur} | {message} | {port} | {protocole}"
+
+                if rd.randint(1, 100) == 1:
+                    ligne = ligne[:rd.randint(10, 40)]  # ligne coupée pour tester le filtre lambda
+                                    
                 fichier.write(ligne + '\n')
+
+               
                 
                 if rd.randint(1, 20) == 1:
                     fichier.write('\n') #ligne vide pour module 2 
 
-                if rd.randint(1, 30) == 1:
+                if rd.randint(1, 1000) == 1:
                      date = crea_attaque(fichier, date)               
 
 

@@ -10,12 +10,12 @@ def lire_fichier(nom_fichier):
 
 
 # TEST 1 : lecture avec yield -> on affiche les 5 premières lignes
-'''compteur = 0
-for ligne in lire_fichier('logs/logs_jour.txt'):
+compteur = 0
+'''for ligne in lire_fichier('logs/logs_jour.txt'):
     print(ligne)
     compteur += 1
     if compteur == 5:
-        break ''' 
+        break '''
 
 
 
@@ -60,8 +60,8 @@ def ligne_en_dico(ligne):
 
 
 # TEST 3 : chaque ligne devient un dictionnaire
-'''compteur = 0
-for ligne in lire_fichiers(fichiers):
+compteur = 0
+'''for ligne in lire_fichiers(fichiers):
     if ligne == '':      # on saute les lignes vides
         continue
     print(ligne_en_dico(ligne))

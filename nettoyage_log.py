@@ -3,14 +3,18 @@ from lecture_log import lire_fichiers, fichiers, ligne_en_dico
 lignes= lire_fichiers(fichiers)
 
 lignes_non_vides = filter(None, lignes) 
+# TEST 4 : filter(None) -> combien de lignes vides enlevées
+'''total = 0
+for ligne in lire_fichiers(fichiers):
+    total += 1
 
-# TEST 4  : filter(None) -> les lignes vides sont enlevées
-'''compteur = 0
+non_vides = 0
 for ligne in filter(None, lire_fichiers(fichiers)):
-    print(ligne)
-    compteur += 1
-    if compteur == 5:
-        break'''
+    non_vides += 1
+
+print(f"Lignes au départ : {total}")
+print(f"Lignes après filter(None) : {non_vides}")
+print(f"Lignes vides enlevées : {total - non_vides}")'''
 
 
 
@@ -22,12 +26,25 @@ lignes_valides = filter(lambda ligne: len(ligne.split(' | ')) == 7, lignes_non_v
 # lambda : on garde seulement les lignes complètes (7 morceaux)
 
 
-# TEST 5 : lambda -> seulement les lignes complètes
-compteur = 0
-'''for ligne in filter(lambda ligne: len(ligne.split(' | ')) == 7, lire_fichiers(fichiers)):
-    print(ligne)
-    compteur += 1
-    if compteur == 5:
+# TEST 5 : lambda -> combien de lignes incomplètes enlevées
+'''non_vides = 0
+for ligne in filter(None, lire_fichiers(fichiers)):
+    non_vides += 1
+
+completes = 0
+for ligne in filter(lambda ligne: len(ligne.split(' | ')) == 7, filter(None, lire_fichiers(fichiers))):
+    completes += 1
+
+print(f"Lignes non vides : {non_vides}")
+print(f"Lignes complètes après le lambda : {completes}")
+print(f"Lignes incomplètes enlevées : {non_vides - completes}")
+
+# quelques exemples de lignes rejetées
+exemples = 0
+for ligne in filter(lambda ligne: len(ligne.split(' | ')) != 7, filter(None, lire_fichiers(fichiers))):
+    print("Rejetée :", ligne)
+    exemples += 1
+    if exemples == 3:
         break'''
 
 
@@ -58,13 +75,19 @@ def normaliser(log):
 logs_propres = map(normaliser, logs)
 
 
-# TEST 6 : map + normaliser -> les logs en dictionnaires propres
-'''compteur = 0
-for log in logs_propres:
-    print(log)
-    compteur += 1
-    if compteur == 5:
-        break'''
+# TEST 6 : normaliser -> combien de logs corrigés + exemples avant / après
+'''corriges = 0
+for ligne in filter(lambda ligne: len(ligne.split(' | ')) == 7, filter(None, lire_fichiers(fichiers))):
+    log = ligne_en_dico(ligne)
+    avant = (log['niveau'], log['utilisateur'])   # on garde l'ancienne version AVANT normaliser
+    log = normaliser(log)
+    apres = (log['niveau'], log['utilisateur'])
+    if avant != apres:
+        corriges += 1
+        if corriges <= 5:
+            print(f"Avant : {avant}  ->  Après : {apres}")
+
+print(f"Logs corrigés par normaliser : {corriges}")'''
 
 
 
