@@ -1,6 +1,5 @@
-"""Module 3 : agrégation et traitement de données avancé.
 
-Prend en entrée l'itérateur de logs propres (module 2) et produit :
+#Prend en entrée l'itérateur de logs propres (module 2) et produit :
 - les IP uniques en erreur (set) et les opérations avec la blacklist (frozenset) ;
 - des compteurs par niveau et par utilisateur (defaultdict) ;
 - la détection d'attaques par force brute (while / for / break / continue / else).
