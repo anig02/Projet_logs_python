@@ -1,5 +1,4 @@
-
-#Prend en entrée l'itérateur de logs propres (module 2) et produit :
+"""Prend en entrée l'itérateur de logs propres (module 2) et produit :
 - les IP uniques en erreur (set) et les opérations avec la blacklist (frozenset) ;
 - des compteurs par niveau et par utilisateur (defaultdict) ;
 - la détection d'attaques par force brute (while / for / break / continue / else).
@@ -115,7 +114,7 @@ def detecter_force_brute(echecs_par_ip: dict, seuil: int = SEUIL_FORCE_BRUTE,
 
 
 def main() -> None:
-    from nettoyage_log import logs_propres  # module 2 (adapter le nom du fichier)
+    from transformation import logs_propres  # module 2 (adapter le nom du fichier)
 
     resultats = analyser_logs(logs_propres)
 
@@ -142,3 +141,7 @@ def main() -> None:
 # Évite que main() se lance quand un autre fichier (ex : main.py) importe ce module
 if __name__ == '__main__':
     main()
+
+
+
+
