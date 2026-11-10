@@ -1,10 +1,7 @@
 
 '''lecture avec yield'''
 
-# yield permet de lire le fichier ligne par ligne : il lit une ligne, la donne,
-# fait une pause, puis lit la suivante. Il ne lit pas tout le fichier d'un coup,
-# ce qui économise la mémoire (indispensable pour les très gros fichiers).
-def lire_logs(nom_fichier):
+def lire_fichier(nom_fichier):
     with open(nom_fichier, 'r', encoding='utf-8') as fichier:
         for ligne in fichier:
             # strip() enlève le saut de ligne invisible (\n) à la fin,
@@ -12,23 +9,43 @@ def lire_logs(nom_fichier):
             yield ligne.strip()
 
 
+# TEST 1 : lecture avec yield -> on affiche les 5 premières lignes
+'''compteur = 0
+for ligne in lire_fichier('logs/logs_jour.txt'):
+    print(ligne)
+    compteur += 1
+    if compteur == 5:
+        break ''' 
+
+
+
+
 
 '''lecture avec yield From '''
 
-def lire_plusieurs_fichier(list_fichier):
+def lire_fichiers(list_fichier):
     for fichier in list_fichier:
-        yield from lire_logs(fichier)
-
-#test
-
-fichiers = ['logs/logs_jour1.txt', 'logs/logs_jour2.txt',
-            'logs/logs_jour3.txt', 'logs/logs_jour4.txt']
-
-'''for ligne in lire_plusieurs_fichier(fichiers):
-    print(ligne)'''
+        yield from lire_fichier(fichier)
 
 
-# Transforme UNE ligne de texte en dictionnaire
+fichiers = ['logs/logs_jour.txt']
+
+
+# TEST 2 : lecture avec yield from -> pareil, avec la liste de fichiers
+'''compteur = 0
+for ligne in lire_fichiers(fichiers):
+    print(ligne)
+    compteur += 1
+    if compteur == 5:
+        break'''
+
+
+
+
+
+
+''' Transforme UNE ligne de texte en dictionnaire'''
+
 def ligne_en_dico(ligne):
     morceaux = ligne.split(' | ')
     date, niveau, ip, utilisateur, message, port, protocole = morceaux
@@ -41,12 +58,13 @@ def ligne_en_dico(ligne):
     }
 
 
-# Lit un fichier et donne chaque ligne sous forme de dictionnaire
-def transformation_ligne_dico(nom_fichier):
-    for ligne in lire_logs(nom_fichier):
-        yield ligne_en_dico(ligne)
 
-
-def lire_plusieurs_fichier_bis(list_fichier):
-    for fichier in list_fichier:
-        yield from transformation_ligne_dico(fichier)
+# TEST 3 : chaque ligne devient un dictionnaire
+'''compteur = 0
+for ligne in lire_fichiers(fichiers):
+    if ligne == '':      # on saute les lignes vides
+        continue
+    print(ligne_en_dico(ligne))
+    compteur += 1
+    if compteur == 5:
+        break'''
